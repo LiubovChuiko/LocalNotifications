@@ -52,7 +52,7 @@ export default class App extends Component {
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
-            this.notif.localNotif('help_sound.wav');
+            this.notif.localNotif('whatsapp_incoming.mp3');
           }}>
           <Text>Local Notification with sound (now)</Text>
         </TouchableOpacity>
@@ -66,7 +66,7 @@ export default class App extends Component {
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
-            this.notif.scheduleNotif('help_sound.wav');
+            this.notif.scheduleNotif('whatsapp_incoming.mp3');
           }}>
           <Text>Schedule Notification with sound in 30s</Text>
         </TouchableOpacity>

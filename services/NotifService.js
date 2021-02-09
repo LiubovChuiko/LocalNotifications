@@ -40,7 +40,7 @@ export default class NotifService {
         channelId: "sound-channel-id", // (required)
         channelName: `Sound channel`, // (required)
         channelDescription: "A sound channel", // (optional) default: undefined.
-        soundName: "sample.mp3", // (optional) See `soundName` parameter of `localNotification` function
+        soundName: "help_sound.wav", // (optional) See `soundName` parameter of `localNotification` function
         importance: 4, // (optional) default: 4. Int value of the Android notification importance
         vibrate: true, // (optional) default: true. Creates the default vibration patten if true.
       },

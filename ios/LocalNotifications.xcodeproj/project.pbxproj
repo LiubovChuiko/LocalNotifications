@@ -20,6 +20,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A324FAC4E34F888A435311BF /* libPods-LocalNotifications-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C38487AFCE2DEF62E7D5209 /* libPods-LocalNotifications-tvOSTests.a */; };
 		CE655D5325D1DD2000AB284F /* general_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE655D5225D1DD2000AB284F /* general_sound.wav */; };
+		CE655D5525D2B01500AB284F /* help_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE655D5425D2B01400AB284F /* help_sound.wav */; };
 		EC51CA4BEE2599441D519855 /* libPods-LocalNotifications.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E4E2A50F27E7E307A5B557D /* libPods-LocalNotifications.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		A7DD49A97D65FB6834125A6F /* Pods-LocalNotifications-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotifications-tvOS.release.xcconfig"; path = "Target Support Files/Pods-LocalNotifications-tvOS/Pods-LocalNotifications-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		CE655D5125D1CF3700AB284F /* LocalNotifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LocalNotifications.entitlements; path = LocalNotifications/LocalNotifications.entitlements; sourceTree = "<group>"; };
 		CE655D5225D1DD2000AB284F /* general_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = general_sound.wav; sourceTree = "<group>"; };
+		CE655D5425D2B01400AB284F /* help_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = help_sound.wav; sourceTree = "<group>"; };
 		E144DBD13331F5B007481C35 /* Pods-LocalNotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalNotifications.debug.xcconfig"; path = "Target Support Files/Pods-LocalNotifications/Pods-LocalNotifications.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -163,6 +165,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CE655D5425D2B01400AB284F /* help_sound.wav */,
 				CE655D5225D1DD2000AB284F /* general_sound.wav */,
 				13B07FAE1A68108700A75B9A /* LocalNotifications */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -347,6 +350,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				CE655D5325D1DD2000AB284F /* general_sound.wav in Resources */,
+				CE655D5525D2B01500AB284F /* help_sound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

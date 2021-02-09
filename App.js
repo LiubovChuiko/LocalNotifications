@@ -66,7 +66,7 @@ export default class App extends Component {
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
-            this.notif.scheduleNotif('whatsapp_incoming.mp3');
+            this.notif.scheduleNotif('cosmic_radio.ogg');
           }}>
           <Text>Schedule Notification with sound in 30s</Text>
         </TouchableOpacity>

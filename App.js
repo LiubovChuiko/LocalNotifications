@@ -35,97 +35,50 @@ export default class App extends Component {
           Example app react-native-push-notification
         </Text>
         <View style={styles.spacer}></View>
-        <TextInput
-          style={styles.textField}
-          value={this.state.registerToken}
-          placeholder="Register token"
-        />
-        <View style={styles.spacer}></View>
 
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
             this.notif.localNotif();
           }}>
-          <Text>Local Notification (now)</Text>
+          <Text>Local Notification (default sound) (now)</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
             this.notif.localNotif('whatsapp_incoming.mp3');
           }}>
-          <Text>Local Notification with sound (now)</Text>
+          <Text>Local Notification with sound (.mp3) (now)</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => {
+            this.notif.localNotif('timerbell.wav');
+          }}>
+          <Text>Local Notification with sound (timerbell.wav) (now)</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => {
+            this.notif.localNotif('help_sound.wav');
+          }}>
+          <Text>Local Notification with sound (help_sound.wav) (now)</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
             this.notif.scheduleNotif();
           }}>
-          <Text>Schedule Notification in 30s</Text>
+          <Text>Schedule Notification (default) in 15s</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
             this.notif.scheduleNotif('cosmic_radio.ogg');
           }}>
-          <Text>Schedule Notification with sound in 30s</Text>
+          <Text>Schedule Notification with sound (.ogg) in 15s</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.cancelNotif();
-          }}>
-          <Text>Cancel last notification (if any)</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.cancelAll();
-          }}>
-          <Text>Cancel all notifications</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.checkPermission(this.handlePerm.bind(this));
-          }}>
-          <Text>Check Permission</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.requestPermissions();
-          }}>
-          <Text>Request Permissions</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.abandonPermissions();
-          }}>
-          <Text>Abandon Permissions</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.getScheduledLocalNotifications(notifs => console.log(notifs));
-          }}>
-          <Text>Console.Log Scheduled Local Notifications</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.createOrUpdateChannel();
-          }}>
-          <Text>Create or update a channel</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.popInitialNotification();
-          }}>
-          <Text>popInitialNotification</Text>
-        </TouchableOpacity>
+
 
         <View style={styles.spacer}></View>
 

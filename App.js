@@ -53,14 +53,7 @@ export default class App extends Component {
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
-            this.notif.localNotif('timerbell.wav');
-          }}>
-          <Text>Local Notification with sound (timerbell.wav) (now)</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => {
-            this.notif.localNotif('help_sound.wav');
+            this.notif.localNotif2('help_sound.wav');
           }}>
           <Text>Local Notification with sound (help_sound.wav) (now)</Text>
         </TouchableOpacity>

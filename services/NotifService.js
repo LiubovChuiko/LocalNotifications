@@ -40,7 +40,7 @@ export default class NotifService {
         channelId: "sound-channel-id", // (required)
         channelName: `Sound .mp3 channel`, // (required)
         channelDescription: "A sound channel", // (optional) default: undefined.
-        soundName: "whatsapp_incoming.mp3", // (optional) See `soundName` parameter of `localNotification` function
+        soundName: "bell_sound.mp3", // (optional) See `soundName` parameter of `localNotification` function
         importance: 4, // (optional) default: 4. Int value of the Android notification importance
         vibrate: true, // (optional) default: true. Creates the default vibration patten if true.
       },
@@ -218,7 +218,7 @@ export default class NotifService {
   scheduleNotif2(soundName) {
     this.lastId++;
     PushNotification.localNotificationSchedule({
-      date: new Date(Date.now() + 15 * 1000), // in 30 secs
+      date: new Date(Date.now() + 5 * 1000), // in 30 secs
 
       /* Android Only Properties */
       channelId: 'sound3-channel-id',
